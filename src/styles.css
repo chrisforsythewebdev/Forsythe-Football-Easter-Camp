@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0 auto;
+    font-family:'Courier New', Courier, monospace;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+.logo-container {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100%;
+}
+
+.image-wrapper {
+    width: 525px;
+    height: 475px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coaching-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.25em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display:inline-flex;
+    flex-wrap:wrap;
+}
+
+.flex-direction{
+    flex-direction:row;
+}
+
+.paypal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pp-btn {
+    width: 40%;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.pp-btn a {
+    text-decoration: none;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 525px;
+    height: 450px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.form-row input, textarea {
+    margin-bottom: .5em;
+}
+
+.btn {
+    background: blue;
+    border: 1px solid blanchedalmond;
+    color: white;
+    padding: .5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: none;
+    height: 30px;
+    width: 40%;
+    margin-top: 2em;
+    margin: 10px auto;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background: black;
+}
+
+.sign-up-form input textarea {
+    outline: none;   
+    border: 1px solid blue;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    color: black;
+}
+
+.sign-up-form input:focus {
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        width: 375px;
+        margin:0 auto;
+    }
+    
+    .flex-direction{
+        flex-direction:column;
+    }
+
+    .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 450px;
+        margin: .5em auto;
+    }
+
+    .form-div {
+        width: 350px;
+        height: 450px;  
+        margin: auto;
+    }
+
+    
+
+    form {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+   
+
+    form input, textarea {
+        width: 100%;
+    }
+
+    .form-row {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display:inline-flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
