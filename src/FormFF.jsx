@@ -14,10 +14,8 @@ export default function FormFF() {
 
         emailjs.sendForm('service_rzf3wyq', 'template_580ys5t', form.current, 'LryYLoFGJRa0MFCDB')
         .then((result) => {
-            console.log(result.text);
             alert("Email sent");
         }, (error) => {
-            console.log(error.text);
             alert("Error sending email. Please contact me via instagram.")
         });
     };
