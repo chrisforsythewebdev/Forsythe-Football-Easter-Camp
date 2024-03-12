@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "./styles.css";
 import emailjs from '@emailjs/browser';
-import coaching from "./images/coaching.jpg"
 import ImageCarousel from "./ImageCarousel.jsx";
 import { SliderData } from './SliderData.js';
 
@@ -19,14 +18,18 @@ export default function FormFF() {
             alert("Email sent");
         }, (error) => {
             console.log(error.text);
-            alert("Error sending email")
+            alert("Error sending email. Please contact me via instagram.")
         });
     };
 
     return (
         <div className="form-div">
         
-            <h1 className="header">Forsythe Football Easter Camp</h1>
+
+            <p className="content">
+          
+                £50 per head - please make payment via the PayPal link below.
+            </p>
         
 
             <form ref={form} onSubmit={sendEmail}>
@@ -66,10 +69,7 @@ export default function FormFF() {
 
             </form>
 
-            <ImageCarousel slides={SliderData} />
-
-            {/* <img className="coaching-image" src={coaching} /> */}
-       
+            <ImageCarousel slides={SliderData} />       
 
             <div className="paypal-container">
                 <button className="pp-btn">

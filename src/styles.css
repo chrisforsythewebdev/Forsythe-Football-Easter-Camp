@@ -14,13 +14,16 @@ body {
 }
 
 .logo-container {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .logo {
     height: 100%;
+    margin-top: 20px;
+    border-radius: 1em;
 }
 
 .image-wrapper {
@@ -29,6 +32,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.content {
+    width: 90%;
+    letter-spacing: .1em;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .coaching-image {
